@@ -3,38 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
     <link rel="stylesheet" href="main.css">
     <title>Colin Campbell Web Development</title>
 </head>
 <body>
         <nav>
            <div class="profileLogo">
-                <img src="" alt="Colin Campbell" class="nav__img">
+                <img src="images/profilePic.jpg" alt="Colin Campbell" class="nav__img">
                 <div class="nav__logo">
                     <h1 class="nav__primaryHeading">Colin <strong>Campbell</strong></h1>
                     <h3 class="nav__subHeading">Web Development</h3>
                 </div>
             </div>    
                <ul class="nav__list">
-                   <li><a href="">About me</a></li>
-                   <li><a href="">skill set</a></li>
-                   <li><a href="">My work</a></li>
-                   <li><a href="">coding</a></li>
-                   <li><a href="">contact</a></li>
+                   <li><a href="#about">About me</a></li>
+                   <li><a href="#skill">skill set</a></li>
+                   <li><a href="#work">My work</a></li>
+                   <li><a href="#coding">coding</a></li>
+                   <li><a href="#infomation">contact</a></li>
                </ul>
            <ul class="nav__social">
-               <li class="nav__icon"></li>
-               <li class="nav__icon"></li>
-               <li class="nav__icon"></li>
+               <li class="nav__icon"><a href=""><i class="fab fa-twitter-square"></i></a></li>
+               <li class="nav__icon"><a href=""><i class="fab fa-facebook-square"></i></a></li>
+               <li class="nav__icon"><a href=""><i class="fab fa-instagram-square"></i></a></li>
            </ul>
         </nav>
 
         <header id="header">
+            <video autoplay muted loop id="header_bg">
+                <source src="images/header_bg.mp4" type="video/mp4">
+              </video>
+              
             <div class="header__logoBox">
-                <h1 class="header__primaryHeading">Colin <strong>Campbell</strong></h1>
-                <h3 class="header__subHeading">Web Development</h3>
+                <button class="fancy-burger">
+                    <span class="box"></span>
+                    <span class="rectangle rectangle--top rectangle--small"></span>
+                    <span class="rectangle rectangle--middle"></span>
+                    <span class="rectangle rectangle--bottom rectangle--small"></span>
+                </button>
+
+                <div class="animationBox">
+                    <div class="header__textBox">
+                        <h1 class="header__primaryHeading">Colin <strong>Campbell</strong></h1>
+                        <h3 class="header__subHeading">Web Development</h3>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <button class="btn btn__header"><a href="#infomation">Lets Work togther</a></button>
             </div>
-            <button class="btn btn__header">Lets Work togther</button>
         </header>
+
+        <div class="modal" id="cv">
+            <div class="modal-container">
+                <div class="modal-close" id="close"><i class="fas fa-times"></i></div>
+                <img src="/dist/images/Front End Web Developer.pdf" alt="CV" class="pdf">
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="container">
+
+                <section id="about">
+                    <h1 class="section__heading">about me</h1>
+                    <div class="section__container-about">
+                        <img src="/dist/images/profilePic.jpg" alt="Colin campbell" class="section__profilePic left">
+                        <div class="section__content right">
+                            <h2 class="content__header">HI, IM COLIN CAMPBELL, A FREELACE FRONT END WEB DEVELOPER</h2>
+                            <p class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                            <p class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                            <button class="btn btn__submit" type="submit">My CV</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skill">
+                    <h1 class="section__heading">Skill Set</h1>
+                    <div class="section__grid">
+
+                        <div class="card card1">
+                            <div class="htmlBox">
+                                <div class="card__iconBox">
+                                    <i class="devicon-html5-plain colored cardIcon"></i>
+                                    <h3 class="card__heading">html5</h3>
+                                </div>
+                                <div class="card__iconBox">
+                                    <i class="devicon-css3-plain colored cardIcon"></i>
+                                    <h3 class="card__heading">css3</h3>
+                                </div>
+                            </div>
+                            <p class="text">HTML5 and CSS3 are the building blocks of the web, ever website starts with these 2 technologies. HTML is the content in every website, text, images etc, CSS3 is what makes everything look a feel good about the website, colours, layout etc.</p>
+                        </div>
+
+                        <div class="card card2">
+                                <div class="card__iconBox">
+                                    <i class="devicon-javascript-plain colored cardIcon"></i>
+                                    <h3 class="card__heading">javscript</h3>
+                                </div>
+                            <p class="text">JavaScript is what makes our website comes to life. Its the technology that make everything interactive. Have you ever clicked a button on site and something changed or scrolled down a web page and an image appeared? Thats javaScript, its the most popular programming language on the web</p>
+                        </div>
+
+                        <div class="card card3">
+                            <div class="card__iconBox">
+                               <img src="/dist/images/uxIcon.png" alt="UX Icon" class="cardIcon">
+                                <h3 class="card__heading">UX</h3>
+                            </div>
+                            <p class="text">UX  stands for user experience and this is the process of designing a website with the user in mind. Ux is the is the first step in deploying your website online from it being just an idea in your head. We take your idea a begin designing your site keeping in mind the best possible experience for the end user.</p>
+                        </div>
+
+                        <div class="card card4">
+                            <div class="card__iconBox">
+                                <img src="/dist/images/responsiveIcon.png" alt="" class="cardIcon">
+                                <h3 class="card__heading">RESPONSIVE DESIGN</h3>
+                            </div>
+                            <p class="text">Responsive design is when your website changes from when its viewed on a desktop screen which can be quite large, to a mobile device which is a lot smaller with loosing any important content and also still providing the same user experience</p>
+                        </div>
+
+                        <div class="card card5">
+                            <div class="card__iconBox">
+                                <img src="/dist/images/seoIcon.png" alt="" class="cardIcon">
+                                <h3 class="card__heading">seo</h3>
+                            </div>
+                            <p class="text">SEO stands for search engine optimisation and this is whats needed to list your website on google or another search engine. Not only do you want your site to be seen you also want it to rank well on a search engine making it easier for your user’s to find your site. </p>
+                        </div>
+
+                        <div class="card card6">
+                            <div class="card__iconBox">
+                                <i class="devicon-react-original colored cardIcon"></i>
+                                <h3 class="card__heading">react js</h3>
+                            </div>
+                            <p class="text">React JS is a javascript framework that helps us a developers to build usable components for your websites user interface. It not only makes it faster to build websites but it also makes the website run a lot faster, which in turn provides a fantastic user experience</p>
+                        </div>
+    
+                    </div>
+                </section>
+
+               <section id="work">
+                    <h1 class="section__heading">My Work</h1>
+                    <div class="section__grid-work">
+                        <div class="work-container right">
+                            <img src="/dist/images/bittersweet.jpg" class="site-img">
+                            <div class="site-discription">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
+                            <a href="http://www.bittersweettattoobelfast.co.uk/" class="site-link">www.bittersweettattoobelfast.com</a>
+                        </div>
+
+                        <div class="work-container left">
+                            <img src="/dist/images/access-needs.jpg" class="site-img">
+                            <div class="site-discription">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
+                            <a href="http://porteosselfloadingmotorcycleramp.co.uk/" class="site-link">www.porteosselfloadingmotorcycleramp.co.uk</a>
+                        </div>
+
+                        <div class="work-container left">
+                            <img src="/dist/images/colin-campbell.jpg" class="site-img">
+                            <div class="site-discription">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
+                            <a href="http://colincampbellwebdevelopmentcom" class="site-link">www.colincampbellwebdevelopment.com</a>
+                        </div>
+
+                        <div class="work-container right">
+                            <img src="/dist/images/dj-craig-dalzell.jpg" class="site-img">
+                            <div class="site-discription">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
+                            <a href="http://djcraigdalzell.com" class="site-link">www.djcraigdalzell.com</a>
+                        </div>
+
+                        <div class="work-container left">
+                            <img src="/dist/images/tms.jpg" class="site-img">
+                            <div class="site-discription">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
+                            <a href="http://tmsplumbing.co.uk" class="site-link">www.tmsplumbing.co.uk</a>
+                        </div>
+                    </div>
+               </section>
+               
+               <!-- <section id="coding">
+                   <h1 class="section__heading">coding</h1>
+               </section> -->
+
+               <section id="infomation">
+                <div class="contact__content">
+                    <h2 class="section__heading">THIS IS HOW WE CAN HELP YOUR BUSINESS GROW TOGTHER</h2>
+                    <p class="text">Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
+                    <p class="text">Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
+                    <p class="text">Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
+               </div>
+                <div class="section__container-contact">
+                    <form action="#" id="form" class="form up">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input name="Name" type="text" id="name" placeholder="Name...">
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="name">Email</label>
+                            <input name="Email" type="text" id="email" placeholder="Email...">
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="name">Phone</label>
+                            <input name="Phone" type="number" id="phone" placeholder="Phone...">
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Leave us a message</label>
+                            <textarea class="form-control" name="Message" id="message" placeholder="Message..."></textarea>
+                            <small>Error Mwssage</small>
+                        </div>
+                        <button type="submit" class="btn btn__submit">Send</button>
+                    </form>
+                   </div>
+               </section>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer">
+           
+            <div class="footer__logo">
+                <h1 class="nav__primaryHeading">Colin <strong>Campbell</strong></h1>
+                <h3 class="nav__subHeading">Web Development</h3>
+            </div>
+            
+        </footer>
+
+     <script src="/dist/script.js"></script>
 </body>
 </html>
