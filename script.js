@@ -173,3 +173,28 @@ form.addEventListener('submit', e => {
    validatePhone(phone);
 })
 
+document.addEventListener('DOMContentLoaded', () => {
+    //MODAL//
+const modalContainer = document.querySelector('.modal-container');
+const modalBtn = document.getElementById('modalBtn');
+const modalClose = document.getElementById('close');
+
+modalBtn.addEventListener('click', () => {
+    modalContainer.classList.add('modalActive');
+})
+
+modalClose.addEventListener('click', () => {
+   if( modalContainer.classList.contains('modalActive')){
+       modalContainer.classList.remove('modalActive');
+        }
+    })
+});
+
+//UPWORK LOGO//
+
+
+
+
+
+
+
